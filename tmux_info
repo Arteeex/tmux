@@ -20,7 +20,14 @@ touch ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 или просто перезапустите tmux.
 
+Автоматическое разделение окон:
 
+В .tmux.conf можно добавить команды для автоматического деления окна при старте, например:
+
+
+new-session -d
+split-window -h
+select-pane -t 0
 
 
 
